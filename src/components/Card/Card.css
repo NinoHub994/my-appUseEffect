@@ -1,0 +1,23 @@
+.card{
+    min-height: 300px;
+    width: auto!important;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 2px solid green;
+}
+
+.card-body {
+    width: 250px;
+    height: 100%;
+    font-size: 1rem;
+}
+
+.card-body h2{
+    height: 2%;
+    width: 200px;
+}
+
+img{
+    height: 200px;
+    width: 200px!important;
+}
