@@ -15,13 +15,13 @@ type CardProps ={
 //style={{background:"green"}}
 const Card = (props:CardProps) => {
   return (
-    <div id="root" className="d-flex justify-content-center align-items-center">
-      <div className="card mt-3 mb-3">       
+    <div id="root" className="">
+      <div className="card mt-3 mb-3 justify-content-between align-items-center flex-column">       
         <div className="card-body">
           <p className="card-text">{props.title}</p>
-          <img src={props.image} alt="products" className='mt-5 mb-5'/>
+          <img src={props.image} alt="products" className='mt-5 mb-5 img-fluid'/>
           <h5 className="card-text">{props.price}</h5>
-          <div className='d-flex justify-content-center align-items-center'>{props.children}</div>  
+          <div className=''>{props.children}</div>  
         </div>
       </div>
     </div>)

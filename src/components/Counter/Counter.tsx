@@ -19,9 +19,9 @@ export const Counter = () => {
     y === "pippo" ? setY("caio") : setY("pippo")
   }
   return (
-    <>
+    <div className='col'>
       <button onClick={increment}>Counter: {x}</button>
       <button onClick={toggleY}>Counter: {y}</button>
-    </>
+    </div>
   )
 }

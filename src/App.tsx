@@ -40,24 +40,28 @@ const App = () => {
   phones.forEach((el) => ({ ...el, quantity: 0 }))
   //console.log(phones)
   return (
-    <div className='App'>
+    <div className='App container d-flex justify-content-between align-items-center flex-column'>
       <div className="row">
-      {
-        phones.map((phone) =>
-        <div className="col">
-          <Container key={phone.id}>
-           
-            <Card key={phone.id} title={phone.title} price={phone.price} image={phone.image} setTotal={ctotal} setPhones={setPhones}>
-              <Button quantity={phone.quantity} setTotal={setTotal} price={phone.price} total={total} />
-            </Card>
-            
-          </Container></div>)
-         
-      }
-      <h2>{total.toFixed(2)+"$"}</h2>
+        {
+          phones.map((phone) =>
+            <div className="col">
+              <Container key={phone.id}>
+                <Card key={phone.id} title={phone.title} price={phone.price} image={phone.image} setTotal={ctotal} setPhones={setPhones}>
+                  <Button quantity={phone.quantity} setTotal={setTotal} price={phone.price} total={total} />
+                </Card>
+              </Container>
+            </div>)
+        }
+        <h2>{total.toFixed(2) + "$"}</h2>
       </div>
-      <Counter />
+      <div className='row '>
+        <Counter />
+      </div>
     </div>
+    
+    
+      
+   
   )
 }
 
