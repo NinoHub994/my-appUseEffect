@@ -1,9 +1,8 @@
-.container{
-    position: relative;
+.Container{
     border: 2px solid blue;
     color: black;
     margin-top: 20px;
     margin-bottom: 20px;
-    min-height: 500px;
+    min-height: 300px;
     width: 500px!important;
 }

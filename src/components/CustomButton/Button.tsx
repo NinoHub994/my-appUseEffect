@@ -26,7 +26,7 @@ export const Button = (props:ButtonProps) => {
   const decrement = () => {
     if(x>0 && props.total>0){
       f(x - 1);
-      props.setTotal(props.total-props.price)
+      props.setTotal(Math.abs(props.total-props.price))
     }
   }
 

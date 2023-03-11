@@ -16,7 +16,7 @@ type CardProps ={
 const Card = (props:CardProps) => {
   return (
     <div id="root" className="d-flex justify-content-center align-items-center">
-      <div className="card">       
+      <div className="card mt-3 mb-3">       
         <div className="card-body">
           <p className="card-text">{props.title}</p>
           <img src={props.image} alt="products" className='mt-5 mb-5'/>
