@@ -35,7 +35,7 @@ export const Button = (props:ButtonProps) => {
   //}
   //style={{width:"200px"}}
   return (
-    <div className="Button d-flex">
+    <div className="Button d-flex justify-content-between align-items-center">
       <button onClick={decrement} className="btn btn-danger">-</button>
       <h2>{x}</h2>
       <button onClick={increment} className="btn btn-success">+</button>
